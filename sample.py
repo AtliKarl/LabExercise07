@@ -1,11 +1,23 @@
 def divby5(i):
-    pass
+    if int(i) % 5 == 0:
+        return True
+    else:
+        return False
+
 
 def divby3(i):
-    pass
+    if int(i) % 3 == 0:
+        return True
+    else:
+        return False
+
 
 def both(i):
-    pass
+    if divby3(i) and divby5(i):
+        return True
+    else:
+        return False
+
 
 def main():
     user_input = input("Enter a number: ")
@@ -17,4 +29,6 @@ def main():
         print("Fizz")
     else:
         print(str(user_input))
+
+
 main()
