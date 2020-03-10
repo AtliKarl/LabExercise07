@@ -20,8 +20,10 @@ def both(i):
 
 
 def main():
-    user_input = input("Enter a number: ")
-    if both(user_input):
+    user_input = input("Enter an integer: ")
+    if user_input is not int:
+        print("Not an integer")
+    elif both(user_input):
         print("FizzBuzz")
     elif divby5(user_input):
         print("Buzz")
